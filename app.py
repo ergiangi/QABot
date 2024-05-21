@@ -42,7 +42,7 @@ if pdf_file is not None and api_key:
         chain = load_qa_chain(llm, chain_type="stuff")
 
         # Get user question
-        prompt = """Sei un esperto agente del support clienti di Jet HR. Rispondi in modo chiaro, completo e preciso alle domande dei clienti in base alle informazioni che hai disponibili. Se la domanda non c'entra con JetHR, rispondi che non puoi rispondere a quella domanda. Rispondi sempre in Italiano. Struttura la risposta come fosse una male cordiale ma non troppo formale.
+        prompt = """Sei un esperto agente del support clienti di Jet HR. Rispondi in modo chiaro, completo e preciso alle domande dei clienti in base alle informazioni che hai disponibili. Se la domanda non c'entra con JetHR, rispondi che non puoi rispondere a quella domanda. Rispondi sempre in Italiano. Struttura la risposta come fosse una mail cordiale ma non troppo formale.
         Importante: se non hai informazioni, NON INVENTARE UNA RISPOSTA. Di semplicemente che non hai gli elementi per rispondere. 
         Ecco la domanda:
         """
