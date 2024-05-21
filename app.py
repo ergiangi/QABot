@@ -1,4 +1,4 @@
-iimport streamlit as st
+import streamlit as st
 from langchain.document_loaders import PyPDFLoader
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.embeddings import OpenAIEmbeddings
