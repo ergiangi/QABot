@@ -1,4 +1,4 @@
-import streamlit as st
+iimport streamlit as st
 from langchain.document_loaders import PyPDFLoader
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.embeddings import OpenAIEmbeddings
@@ -16,8 +16,8 @@ api_key = st.text_input("Enter your OpenAI API key", type="password")
 pdf_file = st.file_uploader("Carica i PDF con le informazioni", type="pdf")
 
 # Get model and temperature from user
-model_name = st.selectbox("Select a model", ["gpt-3.5-turbo", "gpt-4o"])
-temperature = st.slider("Temperature", min_value=0.0, max_value=1.0, step=0.1, value=0.5)
+model_name = st.selectbox("Seleziona un modello AI", ["gpt-3.5-turbo", "gpt-4o"])
+temperature = st.slider("Temperatura", min_value=0.0, max_value=1.0, step=0.1, value=0.5)
 
 if pdf_file is not None and api_key:
     try:
