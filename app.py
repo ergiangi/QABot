@@ -7,7 +7,7 @@ from langchain.chains.question_answering import load_qa_chain
 from langchain.chat_models import ChatOpenAI
 
 # Set up Streamlit app
-st.title("Jet HR Demo Bot")
+st.title("Jet HR Writing Assistant")
 
 # Get API key from user
 api_key = st.text_input("Enter your OpenAI API key", type="password")
